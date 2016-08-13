@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout tools:openDrawer="start"
+    android:id="@+id/drarlayout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:background="#ebe0e5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+        <RelativeLayout
+            android:id="@+id/relative_main"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"></RelativeLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0sp">
+            <TextView
+                android:id="@+id/rl1_main"
+                android:clickable="true"
+                android:drawableBottom="@drawable/btn_zixun"
+                android:textSize="13dp"
+                android:text="喜爱"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/rl2_main"
+                android:clickable="true"
+                android:drawableBottom="@drawable/btn_select"
+                android:textSize="13dp"
+                android:text="咨询"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/rl3_main"
+                android:clickable="true"
+                android:drawableBottom="@drawable/btn_search"
+                android:textSize="13dp"
+                android:text="直播"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+</LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nv_main"
+        android:layout_gravity="start"
+        android:layout_width="match_parent"
+        app:menu="@menu/menu_main"
+        app:headerLayout="@layout/layout_header"
+        android:layout_height="match_parent"></android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
+

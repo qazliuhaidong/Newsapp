@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/tv1_add"
+            android:text="当前标签"
+            android:textSize="30dp"
+            android:textColor="#ff01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_below="@id/tv1_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_add_internet"
+                android:onClick="onClick"
+                android:text="互联网"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#df240f"
+                android:background="@drawable/btn_add_star"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/btn_add_sichuan"
+                android:text="四川"
+                android:textSize="20dp"
+               android:layout_gravity="center"
+                android:textColor="#df240f"
+                android:background="@drawable/btn_add_star"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/btn_add_android"
+                android:text="安卓"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#df240f"
+                android:background="@drawable/btn_add_star"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/btn_add_war"
+                android:text="军事"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#df240f"
+                android:background="@drawable/btn_add_star"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/btn_add_disport"
+                android:text="娱乐"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#df240f"
+                android:background="@drawable/btn_add_star"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/btn_add_focus"
+                android:text="热点"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#df240f"
+                android:background="@drawable/btn_add_star"
+                android:layout_width="55dp"
+                android:layout_height="55dp" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv2_add"
+            android:text="添加兴趣标签"
+            android:textSize="30dp"
+            android:textColor="#edb016"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <View
+              android:background="#121111"
+              android:layout_width="match_parent"
+              android:layout_height="2dp"></View>
+          <TextView
+              android:clickable="true"
+              android:onClick="onClick"
+              android:id="@+id/tv_add_internet"
+              android:text="互联网"
+              android:textSize="40dp"
+              android:textColor="#44e83e0a"
+              android:layout_gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+          <View
+
+              android:background="#1d1c1c"
+              android:layout_width="match_parent"
+              android:layout_height="2dp"></View>
+          <TextView
+              android:clickable="true"
+              android:onClick="onClick"
+              android:id="@+id/tv_add_focus"
+              android:text="热点"
+              android:textSize="40dp"
+              android:textColor="#44e83e0a"
+              android:layout_gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+          <View
+              android:background="#0e0d0d"
+              android:layout_width="match_parent"
+              android:layout_height="2dp"></View>
+          <TextView
+              android:clickable="true"
+              android:onClick="onClick"
+              android:id="@+id/tv_add_android"
+              android:text="安卓"
+              android:textSize="40dp"
+              android:textColor="#44e83e0a"
+              android:layout_gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+          <View
+              android:background="#2f2c2b"
+              android:layout_width="match_parent"
+              android:layout_height="2dp"></View>
+          <TextView
+              android:clickable="true"
+              android:onClick="onClick"
+              android:id="@+id/tv_add_disport"
+              android:text="娱乐"
+              android:textSize="40dp"
+              android:textColor="#44e83e0a"
+              android:layout_gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+          <View
+              android:background="#131212"
+              android:layout_width="match_parent"
+              android:layout_height="2dp"></View>
+          <TextView
+              android:clickable="true"
+              android:onClick="onClick"
+              android:id="@+id/tv_add_war"
+              android:text="军事"
+              android:textSize="40dp"
+              android:textColor="#44e83e0a"
+              android:layout_gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+          <View
+              android:background="#181616"
+              android:layout_width="match_parent"
+              android:layout_height="2dp"></View>
+          <TextView
+              android:clickable="true"
+              android:onClick="onClick"
+              android:id="@+id/tv_add_sichuan"
+              android:text="四川"
+              android:textSize="40dp"
+              android:textColor="#44e83e0a"
+              android:layout_gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />
+          <View
+              android:background="#252121"
+              android:layout_width="match_parent"
+              android:layout_height="2dp"></View>
+      </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
